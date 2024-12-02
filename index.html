@@ -4,26 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sito vetrina di esempio per personalizzazione.">
-    <title>[Il Tuo Nome] - Sito di Presentazione</title>
+    <meta name="description" content="Personal site of Daniele Bifolco, PhD student in Computer Engineering at the University of Sannio. Learn about my research projects, academic publications, scientific contributions and contact information.">
+    <title>PhD Daniele Bifolco</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="icon" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="android-chrome" sizes="192x192" href="assets/images/android-chrome-192x192.png">
+    <link rel="android-chrome" sizes="512x512" href="assets/images/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">[Il Tuo Nome]</a>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="assets/images/logo.png" alt="Logo" class="me-2" style="height: 40px; width: auto;">
+                Daniele Bifolco
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Chi Sono</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#research">Ricerca</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
                 </ul>
             </div>
         </div>
@@ -64,10 +75,30 @@
     <!-- Contatti -->
     <section id="contact" class="py-5 bg-light">
         <div class="container" data-aos="fade-up">
-            <h2>Contatti</h2>
-            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+            <h2>Contacts</h2>
+
+            <div class="d-flex justify-content-center mb-4">
+                <a href="https://x.com/tuoprofilo" target="_blank" class="me-3">
+                    <i class="fab fa-twitter" style="font-size: 40px; color: #1da1f2;"></i>
+                </a>
+                <a href="https://linkedin.com/in/tuoprofilo" target="_blank" class="me-3">
+                    <i class="fab fa-linkedin" style="font-size: 40px; color: #0077b5;"></i>
+                </a>
+                <a href="https://www.scopus.com/authid/detail.uri?authorId=tuoId" target="_blank" class="me-3">
+                    <i class="fas fa-book" style="font-size: 40px; color: #ff6f61;"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=tuoId" target="_blank" class="me-3">
+                    <i class="fas fa-graduation-cap" style="font-size: 40px; color: #4285f4;"></i>
+                </a>
+                <a href="https://dblp.org/pid/tuoId" target="_blank">
+                    <i class="fas fa-database" style="font-size: 40px; color: #f39c12;"></i>
+                </a>
+
+            </div>
+
+            <form action="https://formsubmit.co/d.bifolo97@gmail.com" method="POST">
                 <div class="mb-3">
-                    <label for="name" class="form-label">Nome</label>
+                    <label for="name" class="form-label">Name</label>
                     <input type="text" class="form-control" id="name" name="name" required>
                 </div>
                 <div class="mb-3">
@@ -75,17 +106,17 @@
                     <input type="email" class="form-control" id="email" name="email" required>
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Messaggio</label>
+                    <label for="message" class="form-label">Message</label>
                     <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Invia</button>
+                <button type="submit" class="btn btn-primary">Send</button>
             </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="text-center py-4 bg-dark text-white">
-        <p>© 2024 [Il Tuo Nome]. Tutti i diritti riservati.</p>
+        <p>© 2024 Daniele Bifolco. All rights reserved.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
