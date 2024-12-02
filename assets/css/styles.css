@@ -1,0 +1,59 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+    
+.navbar-brand img {
+    border-radius: 50%; /* Per un effetto arrotondato */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
+    transition: transform 0.3s ease; /* Aggiunge un'animazione */
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.1); /* Effetto zoom al passaggio del mouse */
+}
+
+#contact a img {
+    transition: transform 0.2s ease;
+}
+
+#contact a img:hover {
+    transform: scale(1.1); /* Effetto zoom al passaggio del mouse */
+}
+
+#contact a {
+    text-decoration: none;
+}
+
+#contact a i {
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+#contact a i:hover {
+    transform: scale(1.1); /* Zoom */
+    color: #000; /* Cambia colore al passaggio del mouse */
+}
