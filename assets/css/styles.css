@@ -57,3 +57,12 @@ h2 {
     transform: scale(1.1); /* Zoom */
     color: #000; /* Cambia colore al passaggio del mouse */
 }
+
+#about img {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#about img:hover {
+    transform: scale(1.1); /* Effetto zoom */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombra */
+}
