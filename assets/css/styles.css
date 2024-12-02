@@ -60,9 +60,24 @@ h2 {
 
 #about img {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    max-width: 100%; /* Fallback responsivo */
+    height: auto; /* Mantiene le proporzioni */
+    object-fit: cover;
 }
 
 #about img:hover {
     transform: scale(1.1); /* Effetto zoom */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombra */
+}
+
+@media (min-width: 768px) {
+    #about img {
+        max-width: 150px; /* Dimensione per tablet e dispositivi più grandi */
+    }
+}
+
+@media (min-width: 1200px) {
+    #about img {
+        max-width: 200px; /* Dimensione per schermi desktop */
+    }
 }
