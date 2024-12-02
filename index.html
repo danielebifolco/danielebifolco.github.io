@@ -1,12 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sito web vetrina di [Il Tuo Nome], dottorando in Ingegneria Informatica presso UniSannio.">
-    <title>Home - [Il Tuo Nome]</title>
+    <meta name="description" content="Sito vetrina di esempio per personalizzazione.">
+    <title>[Il Tuo Nome] - Sito di Presentazione</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <!-- Navbar -->
@@ -18,26 +20,79 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="about.html">Chi Sono</a></li>
-                    <li class="nav-item"><a class="nav-link" href="research.html">Ricerca</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Progetti</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Chi Sono</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Ricerca</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Progetti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contatti</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="text-center py-5 bg-light">
-        <div class="container">
-            <h1>Benvenuto nel mio sito!</h1>
+    <header class="text-center py-5 bg-primary text-white" id="hero">
+        <div class="container" data-aos="fade-up">
+            <h1>Benvenuto!</h1>
             <p class="lead">Sono [Il Tuo Nome], dottorando in Ingegneria Informatica presso UniSannio.</p>
         </div>
     </header>
 
+    <!-- Chi Sono -->
+    <section id="about" class="py-5">
+        <div class="container" data-aos="fade-right">
+            <h2>Chi Sono</h2>
+            <p>Sono [Il Tuo Nome], dottorando presso l'Università del Sannio. I miei interessi principali includono...</p>
+        </div>
+    </section>
+
+    <!-- Ricerca -->
+    <section id="research" class="py-5 bg-light">
+        <div class="container" data-aos="fade-left">
+            <h2>Ricerca</h2>
+            <p>Qui troverai i dettagli dei miei lavori di ricerca e pubblicazioni.</p>
+        </div>
+    </section>
+
+    <!-- Progetti -->
+    <section id="projects" class="py-5">
+        <div class="container" data-aos="zoom-in">
+            <h2>Progetti</h2>
+            <p>Una selezione dei miei progetti recenti.</p>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container" data-aos="fade-up">
+            <h2>Contatti</h2>
+            <form action="https://formsubmit.co/your-email@example.com" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Messaggio</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Invia</button>
+            </form>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="text-center py-4 bg-dark text-white">
-        <p>© [Anno] [Il Tuo Nome] - Tutti i diritti riservati</p>
+        <p>© 2024 [Il Tuo Nome]. Tutti i diritti riservati.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
+    
