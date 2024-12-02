@@ -1,0 +1,29 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+    
