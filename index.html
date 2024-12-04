@@ -128,12 +128,32 @@
         </div>
     </section>
     <!-- Ricerca -->
-    <section id="research" class="py-5 bg-light">
+    <section id="publications" class="py-5 bg-light">
         <div class="container" data-aos="fade-left">
             <h2>Publications</h2>
-            <p>Qui troverai i dettagli dei miei lavori di ricerca e pubblicazioni.</p>
+            <div id="publications-list"></div>
         </div>
     </section>
+    
+    <script>
+        async function fetchPublications() {
+            const response = await fetch('https://serpapi.com/search.json?engine=google_scholar&author_id=DyBfcIEAAAAJ&hl&api_key=5cc4949cb648aeb87092a5ef91dd1bc2d53f752faab8100c562c7a1a0766a201');
+            const data = await response.json();
+            const publicationsList = document.getElementById('publications-list');
+            
+            data.scholar_results.forEach(publication => {
+                const publicationItem = document.createElement('div');
+                publicationItem.innerHTML = `
+                    <h3>${publication.title}</h3>
+                    <p>${publication.snippet}</p>
+                    <a href="${publication.link}" target="_blank">Read more</a>
+                `;
+                publicationsList.appendChild(publicationItem);
+            });
+        }
+    
+        fetchPublications();
+    </script>
 
     <!-- Progetti -->
     <section id="projects" class="py-5">
@@ -161,7 +181,7 @@
                 <a href="https://www.scopus.com/authid/detail.uri?authorId=59202267400" target="_blank" class="me-3">
                     <img src="assets/images/scopus.svg" alt="Scoups" style="height: 40px; width: 40px;">
                 </a>
-                <a href="https://scholar.google.com/citations?user=DyBfcIEAAAAJ&hl=it" target="_blank" class="me-3">
+                <a href="https://scholar.google.com/citations?user=DyBfcIEAAAAJ&hl" target="_blank" class="me-3">
                     <img src="assets/images/Google_Scholar_logo.svg" alt="Google Scholar" style="height: 40px; width: 40px;">
                 </a>
                 <a href="https://www.unisannio.it/it/users/daniele-bifolco" target="_blank" class="me-3">
