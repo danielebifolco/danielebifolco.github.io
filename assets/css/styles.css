@@ -1,15 +1,66 @@
-
 body {
     font-family: 'Arial', sans-serif;
 }
 
 header {
-    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white;
+    margin-top: 56px; /* Altezza della navbar */
+    margin-bottom: 20px; /* Spazio sotto il carosello */
+    position: relative;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px; /* Posiziona il testo nella parte inferiore */
+    left: 50%;
+    transform: translateX(-50%); /* Centra orizzontalmente */
+    z-index: 10;
+    width: 80%; /* Assicura che il testo non esca dai bordi */
+}
+
+.carousel-caption h1 {
+    font-size: 2rem; /* Dimensione del testo per schermi grandi */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem; /* Dimensione del testo per schermi grandi */
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        width: 90%; /* Riduce la larghezza del testo su schermi più piccoli */
+        padding: 10px; /* Riduce il padding su schermi più piccoli */
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.5rem; /* Riduce la dimensione del testo su schermi più piccoli */
+    }
+
+    .carousel-caption p {
+        font-size: 1rem; /* Riduce la dimensione del testo su schermi più piccoli */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption {
+        width: 95%; /* Riduce ulteriormente la larghezza del testo su schermi molto piccoli */
+        padding: 5px; /* Riduce ulteriormente il padding su schermi molto piccoli */
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.2rem; /* Riduce ulteriormente la dimensione del testo su schermi molto piccoli */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem; /* Riduce ulteriormente la dimensione del testo su schermi molto piccoli */
+    }
 }
 
 footer {
@@ -26,7 +77,12 @@ h2 {
     color: #333;
     margin-bottom: 20px;
 }
-    
+
+.navbar {
+    position: relative;
+    z-index: 10; /* Assicura che la navbar sia sopra il carosello */
+}
+
 .navbar-brand img {
     border-radius: 50%; /* Per un effetto arrotondato */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Aggiunge una leggera ombra */
@@ -35,6 +91,10 @@ h2 {
 
 .navbar-brand img:hover {
     transform: scale(1.1); /* Effetto zoom al passaggio del mouse */
+}
+
+section {
+    padding-top: 20px; /* Spazio sopra le sezioni */
 }
 
 #contact a img {
