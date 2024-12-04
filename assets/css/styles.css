@@ -8,8 +8,6 @@ header {
     justify-content: center;
     text-align: center;
     color: white;
-    margin-top: 56px; /* Altezza della navbar */
-    margin-bottom: 20px; /* Spazio sotto il carosello */
     position: relative;
 }
 
@@ -130,14 +128,19 @@ section {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombra */
 }
 
-@media (min-width: 768px) {
-    #about img {
-        max-width: 150px; /* Dimensione per tablet e dispositivi più grandi */
-    }
+
+
+.social-icons {
+    margin-top: 20px;
 }
 
-@media (min-width: 1200px) {
-    #about img {
-        max-width: 200px; /* Dimensione per schermi desktop */
-    }
+.social-icons a {
+    color: #333;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
 }
