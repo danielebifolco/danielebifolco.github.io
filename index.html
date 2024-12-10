@@ -137,23 +137,29 @@
     
     <script>
         async function fetchPublications() {
-            const response = await fetch('https://serpapi.com/search.json?engine=google_scholar&author_id=DyBfcIEAAAAJ&hl&api_key=5cc4949cb648aeb87092a5ef91dd1bc2d53f752faab8100c562c7a1a0766a201');
-            const data = await response.json();
-            const publicationsList = document.getElementById('publications-list');
-            
-            data.scholar_results.forEach(publication => {
-                const publicationItem = document.createElement('div');
-                publicationItem.innerHTML = `
-                    <h3>${publication.title}</h3>
-                    <p>${publication.snippet}</p>
-                    <a href="${publication.link}" target="_blank">Read more</a>
-                `;
-                publicationsList.appendChild(publicationItem);
-            });
+            try {
+                const response = await fetch('https://cors-anywhere.herokuapp.com/https://serpapi.com/search.json?engine=google_scholar&author_id=DyBfcIEAAAAJ&hl&api_key=5cc4949cb648aeb87092a5ef91dd1bc2d53f752faab8100c562c7a1a0766a201');
+                const data = await response.json();
+                const publicationsList = document.getElementById('publications-list');
+                
+                data.scholar_results.forEach(publication => {
+                    const publicationItem = document.createElement('div');
+                    publicationItem.classList.add('publication-item', 'mb-4');
+                    publicationItem.innerHTML = `
+                        <h3>${publication.title}</h3>
+                        <p>${publication.snippet}</p>
+                        <a href="${publication.link}" target="_blank">Read more</a>
+                    `;
+                    publicationsList.appendChild(publicationItem);
+                });
+            } catch (error) {
+                console.error('Error fetching publications:', error);
+            }
         }
     
         fetchPublications();
     </script>
+    
 
     <!-- Progetti -->
     <section id="projects" class="py-5">
@@ -172,7 +178,7 @@
                 <a href="https://x.com/BifolcoDaniele" target="_blank" class="me-3">
                     <img src="assets/images/square-x-twitter-brands-solid.svg" alt="Scoups" style="height: 40px; width: 40px;">
                 </a>
-                <a href="www.linkedin.com/in/daniele-bifolco" target="_blank" class="me-3">
+                <a href="https://linkedin.com/in/daniele-bifolco" target="_blank" class="me-3">
                     <i class="fab fa-linkedin" style="font-size: 40px; color: #0077b5;" alt="LinkedIn"></i>
                 </a>
                 <a href="https://www.researchgate.net/profile/Daniele-Bifolco" target="_blank" class="me-3">
