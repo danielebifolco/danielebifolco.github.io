@@ -144,3 +144,33 @@ section {
 .social-icons a:hover {
     color: #0056b3;
 }
+
+
+/* Publications styling */
+#publications ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#publications li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#publications li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#publications li a {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+#publications li a:hover {
+    text-decoration: underline;
+}
