@@ -1,279 +1,485 @@
-
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="google-site-verification" content="tgFW-rFAILJ2E0byfmkxzk8mKuiPwwl7uTG3JK-Qrg8" />
+    <meta name="google-site-verification" content="tgFW-rFAILJ2E0byfmkxzk8mKuiPwwl7uTG3JK-Qrg8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal site of Daniele Bifolco, PhD student in Computer Engineering at the University of Sannio. Learn about my research projects, academic publications, scientific contributions and contact information.">
-    <title>PhD Daniele Bifolco</title>
+    <meta name="description" content="Daniele Bifolco is a PhD student in Computer Engineering focused on software engineering, dependency analysis, software supply chain research, and AI-assisted development.">
+    <meta name="theme-color" content="#0d1b2a">
+    <meta property="og:title" content="Daniele Bifolco | PhD Student in Computer Engineering">
+    <meta property="og:description" content="Research, publications, academic service, and contact details for Daniele Bifolco.">
+    <meta property="og:type" content="website">
+    <title>Daniele Bifolco | PhD Student in Computer Engineering</title>
     <link rel="icon" href="assets/images/favicon.ico">
     <link rel="icon" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="icon" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="android-chrome" sizes="192x192" href="assets/images/android-chrome-192x192.png">
-    <link rel="android-chrome" sizes="512x512" href="assets/images/android-chrome-512x512.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/images/logo.png" alt="Logo" class="me-2" style="height: 40px; width: auto;">
-                Daniele Bifolco
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <nav class="navbar navbar-expand-lg site-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <img src="assets/images/logo.png" alt="Daniele Bifolco logo">
+                <span>Daniele Bifolco</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
                     <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contacts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#service">Service</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="hero">
-        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/images/E99CC044-2.png" class="d-block w-100" alt="Slide 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/images/A80F0006-9045-4BEE-AB3E-C13F3B9B3D7B2024-06-20_11-02-21_000.JPEG" class="d-block w-100" alt="Slide 2">
-                </div>
-                <!--
-                <div class="carousel-item">
-                    <img src="assets/images/FD0FC2CA-C9BA-4332-ADEC-9B6744F545702023-07-28_11-41-26_065-2.jpeg" class="d-block w-100" alt="Slide 3">
-                </div>
-                -->
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            <div class="carousel-caption">
-                <h1>Welcome!</h1>
-                <p class="lead">I am Daniele Bifolco, a PhD student in Computer Engineering</p>
-            </div>
-        </div>
-    </header>
-
-    <section id="about" class="py-5">
-        <div class="container" data-aos="fade-right">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <div id="profileCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/images/0e9fa0a4-be57-4ed6-9d44-d5130075c66f.JPEG" alt="Daniele-Bifolco" class="d-block w-100 square-img ">
-                                <div class="carousel-caption" style="font-size:  0.7rem; bottom: 10px; width: 90%; padding: 1%;">
-                                    One of my favorite photos, sailing vacation
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/F5D0CA89-1B5A-4274-8286-5725BB7A4F0C2024-07-19_19-01-00_291.JPEG" alt="Mina" class="d-block w-100 square-img">
-                                <div class="carousel-caption" style="font-size:  0.7rem; bottom: 10px; width: 90%; padding: 1%;">
-                                    My doggie Mina
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/images/98B2ABCC-031E-4479-86F6-F8CFCAA1ED3F2022-05-10_21-43-50_094.png" alt="Music Live Show" class="d-block w-100 square-img">
-                                <div class="carousel-caption" style="font-size:  0.7rem; bottom: 10px; width: 90%; padding: 1%;">
-                                    Live music performance by one of my favorite singers
-                                </div>
-                            </div>
+    <main id="main-content">
+        <section id="hero" class="hero-section">
+            <div class="hero-backdrop"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy" data-aos="fade-up">
+                    <span class="eyebrow">PhD Student • Software Engineering • AI &amp; Supply Chain Research</span>
+                    <h1>Researching how software dependencies and AI-generated code behave in the real world.</h1>
+                    <p class="hero-lead">
+                        I am Daniele Bifolco, a PhD student in Information Technologies for Engineering at the University of Sannio. My work sits at the intersection of software repositories, dependency intelligence, code provenance, and empirical software engineering.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary btn-lg" href="#publications">Browse Publications</a>
+                        <a class="btn btn-outline-light btn-lg" href="#contact">Get in Touch</a>
+                    </div>
+                    <div class="hero-highlights">
+                        <div class="highlight-card">
+                            <span class="highlight-value">6</span>
+                            <span class="highlight-label">Selected publications listed</span>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#profileCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#profileCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="highlight-card">
+                            <span class="highlight-value">3</span>
+                            <span class="highlight-label">Core research threads</span>
+                        </div>
+                        <div class="highlight-card">
+                            <span class="highlight-value">2026</span>
+                            <span class="highlight-label">Active committee service</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-8">
-                    <h2>About Me</h2>
-                    <p>
-                        Hi there! I’m Daniele Bifolco, a Ph.D. student in Information Technologies for Engineering at the University of Sannio, Benevento, Italy. My journey in tech began at the University of Salerno, where I earned my Bachelor’s Degree in Computer Engineering in 2020 and later my Master’s in Computer Science in 2023. I’ve been on an exciting path of discovery ever since, diving into the fascinating intersections of software, artificial intelligence, and everything in between.
-                    </p>
-                    <p>
-                        But there’s more to me than just research papers and code. I’m a passionate music enthusiast who believes every good line of code deserves a killer playlist. (Pro tip: classical for debugging, rock for breakthroughs!) Oh, and if it’s shiny and has an Apple logo on it, I probably already have it—or it’s on my wishlist. Consider me your local Apple aficionado.
-                    </p>
-                    <p>
-                        I also have a big love for traveling. Discovering new places, connecting with diverse cultures, and seeing the world through fresh perspectives are what keep my curiosity alive and my creativity flowing. Whether it’s strolling through historic cities or trying out local cuisines, I believe every journey adds a new melody to life’s playlist.
-                    </p>
-                    <p>
-                        When I’m not geeking out over AI or software engineering, you’ll find me experimenting with tech gadgets, exploring new music, or trying to convince people that yes, Macs are better.
-                    </p>
-                    <div class="social-icons">
-                        <a href="https://linkedin.com/in/daniele-bifolco" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/danielebifolco" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://twitter.com/BifolcoDaniele" target="_blank"><i class="fab fa-twitter"></i></a>
+
+                <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
+                    <article class="profile-panel">
+                        <div class="profile-photo-wrap">
+                            <img src="assets/images/IMG_7839-2.jpg" alt="Portrait of Daniele Bifolco">
+                        </div>
+                        <div class="profile-panel-body">
+                            <p class="profile-kicker">Current focus</p>
+                            <h2>Empirical studies on dependency graphs, SBOM enrichment, and code origin detection.</h2>
+                            <ul class="profile-topics">
+                                <li>GitHub dependency graph accuracy</li>
+                                <li>Software Bills of Materials and repository mining</li>
+                                <li>LLM-generated code provenance and licensing</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <div class="floating-note floating-note-top">
+                        <span class="floating-title">Affiliation</span>
+                        <strong>University of Sannio</strong>
+                    </div>
+                    <div class="floating-note floating-note-bottom">
+                        <span class="floating-title">Based in</span>
+                        <strong>Benevento, Italy</strong>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="publications" class="py-5 bg-light">
-        <div class="container" data-aos="fade-left">
-            <h2>Publications</h2>
-
-            <!-- Sorting dropdown -->
-            <div class="mb-3">
-                <label for="sort-publications" class="form-label">Sort by:</label>
-                <select id="sort-publications" class="form-select" style="width: auto; display: inline-block;">
-                    <option value="desc" selected>Year ↓</option>
-                    <option value="asc">Year ↑</option>
-                </select>
-            </div>
-
-            <ul id="publications-list">
-                <li data-year="2024">
-                    <a href="https://dl.acm.org/doi/pdf/10.1145/3661167.3661175" target="_blank">
-                    <strong>On the Accuracy of GitHub's Dependency Graph</strong><br>
-                    </a>2024 — <b>D. Bifolco</b>, S. Nocera, S. Romano, M. Di Penta, R. Francese, G. Scanniello<br>
-                    <em>Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering (EASE)</em>
-                </li>
-                <li data-year="2024">
-                    <a href="https://dl.acm.org/doi/pdf/10.1145/3674805.3695390" target="_blank">
-                    <strong>MSR4SBOM: Mining Software Repositories for Enhanced Software Bills of Materials</strong><br>
-                    </a>2024 — G. Scanniello, M. Di Penta, S. Romano, R. Francese, S. Nocera, P. Cassieri, <b>D. Bifolco</b>, F. Zampetti <br>
-                    <em>18th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)</em>
-                </li>
-                <li data-year="2025">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0950584925001934" target="_blank">
-                    <strong>An empirical study on the accuracy of GitHub’s dependency graph and the nature of its inaccuracy</strong><br>
-                    </a>2025 — <b>D. Bifolco</b>, S. Romano, S. Nocera, R. Francese, G. Scanniello, M. Di Penta<br>
-                    <em>Information and Software Technology (IST)</em>
-                </li>
-                <li data-year="2025">
-                    <a href="https://ieeexplore.ieee.org/abstract/document/11025675" target="_blank">
-                    <strong>Do LLMs provide links to code similar to what they generate? A Study with Gemini and Bing CoPilot</strong><br>
-                    </a>2025 — <b>D. Bifolco</b>, P. Cassieri, G. Scanniello, M. Di Penta, F. Zampetti<br>
-                    <em>22nd IEEE/ACM International Conference on Mining Software Repositories (MSR)</em>
-                </li>
-                <li data-year="2025">
-                    <a href="https://sabato-nocera.github.io/files/ease2025.pdf" target="_blank">
-                    <strong>ALOHA: A (IBoM) tooL generatOr for Hugging fAce</strong><br>
-                    </a>2025 — R. D’Avino, S. Nocera, <b>D. Bifolco</b>, F. Pepe, M. Di Penta, G. Scanniello<br>
-                    <em>Proceedings of the 29th International Conference on Evaluation and Assessment in Software Engineering (EASE)</em>
-                </li>
-                <li data-year="2025" class="pub-item has-icons">
-                <div class="pub-content">
-                    <a href="https://arxiv.org/pdf/2510.01077" target="_blank" class="pub-link">
-                    <strong>CodeGenLink: A Tool to Find the Likely Origin and License of Automatically Generated Code</strong><br>
-                    </a>
-                    2025 — <b>D. Bifolco</b>, G. Annicchiarico, P. Barbiero, M. Di Penta, F. Zampetti<br>
-                    <em>Proceedings of the 40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)</em>
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-kicker">About</span>
+                    <h2>Academic profile with a human layer.</h2>
+                    <p>
+                        I earned my Bachelor's Degree in Computer Engineering from the University of Salerno in 2020 and my Master's Degree in Computer Science in 2023. Since then, I have been building a research path around software engineering, repository mining, and AI-assisted development.
+                    </p>
                 </div>
-                <div class="pub-icons">
-                    <a href="https://github.com/danielebifolco/CodeGenLink" class="icon-link github-icon" target="_blank" aria-label="GitHub repository">
-                    <i class="fab fa-github"></i>
+
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-lg-7" data-aos="fade-right">
+                        <article class="surface-card prose-card">
+                            <p>
+                                My work is grounded in empirical methods: I like taking widely used developer tools and platforms, measuring how they behave in practice, and understanding where the gaps are. That includes dependency metadata accuracy, SBOM generation quality, and how large language models relate generated code to existing public code.
+                            </p>
+                            <p>
+                                Outside research, I care about music, travel, consumer tech, and the kinds of side interests that keep technical work creative.
+                            </p>
+                            <div class="inline-socials" aria-label="Social profiles">
+                                <a href="https://linkedin.com/in/daniele-bifolco" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://github.com/danielebifolco" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://twitter.com/BifolcoDaniele" target="_blank" rel="noopener noreferrer" aria-label="X">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-lg-5" data-aos="fade-left">
+                        <div class="stack-layout">
+                            <article class="surface-card mini-card">
+                                <span class="mini-card-label">Interests beyond work</span>
+                                <h3>Music, travel, and technology culture.</h3>
+                            </article>
+                            <article class="surface-card mini-card photo-card">
+                                <img src="assets/images/F5D0CA89-1B5A-4274-8286-5725BB7A4F0C2024-07-19_19-01-00_291.JPEG" alt="Daniele's dog Mina">
+                                <div>
+                                    <span class="mini-card-label">Personal note</span>
+                                    <h3>Mina makes occasional appearances.</h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="content-section section-muted">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-kicker">Research</span>
+                    <h2>Three areas that define the current research direction.</h2>
+                </div>
+                <div class="research-grid">
+                    <article class="surface-card research-card" data-aos="fade-up">
+                        <span class="card-index">01</span>
+                        <h3>Dependency intelligence</h3>
+                        <p>Studying the accuracy, limitations, and implications of dependency metadata in platforms such as GitHub.</p>
+                    </article>
+                    <article class="surface-card research-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="card-index">02</span>
+                        <h3>SBOM enrichment</h3>
+                        <p>Mining software repositories to produce richer and more dependable software bills of materials.</p>
+                    </article>
+                    <article class="surface-card research-card" data-aos="fade-up" data-aos-delay="200">
+                        <span class="card-index">03</span>
+                        <h3>AI code provenance</h3>
+                        <p>Investigating whether code generated by LLMs can be linked back to likely origins, repositories, and licenses.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="content-section">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-kicker">Publications</span>
+                    <h2>Publications</h2>
+                </div>
+
+                <div class="publications-toolbar surface-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="toolbar-field toolbar-search">
+                        <label for="publication-search">Search</label>
+                        <input id="publication-search" type="search" class="form-control" placeholder="Search by title, venue, or keyword">
+                    </div>
+                    <div class="toolbar-field">
+                        <label for="publication-sort">Sort</label>
+                        <select id="publication-sort" class="form-select">
+                            <option value="desc" selected>Newest first</option>
+                            <option value="asc">Oldest first</option>
+                        </select>
+                    </div>
+                    <div class="toolbar-field toolbar-filter">
+                        <span class="toolbar-label">Year</span>
+                        <div class="filter-chips" id="publication-filters">
+                            <button type="button" class="filter-chip active" data-filter="all">All</button>
+                            <button type="button" class="filter-chip" data-filter="2025">2025</button>
+                            <button type="button" class="filter-chip" data-filter="2024">2024</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="results-summary" id="results-summary">Showing 6 publications</p>
+
+                <div class="publication-list" id="publications-list">
+                    <article class="surface-card publication-card" data-year="2025" data-search="dependency graph accuracy empirical study information and software technology github software engineering">
+                        <div class="publication-meta">
+                            <span class="year-pill">2025</span>
+                            <span class="venue-pill">Journal</span>
+                        </div>
+                        <h3>
+                            <a href="https://www.sciencedirect.com/science/article/pii/S0950584925001934" target="_blank" rel="noopener noreferrer">
+                                An empirical study on the accuracy of GitHub's dependency graph and the nature of its inaccuracy
+                            </a>
+                        </h3>
+                        <p class="publication-authors"><strong>D. Bifolco</strong>, S. Romano, S. Nocera, R. Francese, G. Scanniello, M. Di Penta</p>
+                        <p class="publication-venue">Information and Software Technology (IST)</p>
+                    </article>
+
+                    <article class="surface-card publication-card" data-year="2025" data-search="llms links to code gemini bing copilot mining software repositories msr ai generated code">
+                        <div class="publication-meta">
+                            <span class="year-pill">2025</span>
+                            <span class="venue-pill">Conference</span>
+                        </div>
+                        <h3>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/11025675" target="_blank" rel="noopener noreferrer">
+                                Do LLMs provide links to code similar to what they generate? A Study with Gemini and Bing CoPilot
+                            </a>
+                        </h3>
+                        <p class="publication-authors"><strong>D. Bifolco</strong>, P. Cassieri, G. Scanniello, M. Di Penta, F. Zampetti</p>
+                        <p class="publication-venue">22nd IEEE/ACM International Conference on Mining Software Repositories (MSR)</p>
+                    </article>
+
+                    <article class="surface-card publication-card publication-card-featured" data-year="2025" data-search="codegenlink code origin license automatically generated code ase github youtube">
+                        <div class="publication-meta">
+                            <span class="year-pill">2025</span>
+                            <span class="venue-pill">Tool + Demo</span>
+                        </div>
+                        <h3>
+                            <a href="https://arxiv.org/pdf/2510.01077" target="_blank" rel="noopener noreferrer">
+                                CodeGenLink: A Tool to Find the Likely Origin and License of Automatically Generated Code
+                            </a>
+                        </h3>
+                        <p class="publication-authors"><strong>D. Bifolco</strong>, G. Annicchiarico, P. Barbiero, M. Di Penta, F. Zampetti</p>
+                        <p class="publication-venue">Proceedings of the 40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025)</p>
+                        <div class="publication-actions">
+                            <a class="text-link" href="https://github.com/danielebifolco/CodeGenLink" target="_blank" rel="noopener noreferrer">Repository</a>
+                            <a class="text-link" href="https://www.youtube.com/watch?v=M6nqjBf9_pw" target="_blank" rel="noopener noreferrer">Video</a>
+                        </div>
+                    </article>
+
+                    <article class="surface-card publication-card" data-year="2025" data-search="aloha ibom hugging face ease sbom tool repository mining">
+                        <div class="publication-meta">
+                            <span class="year-pill">2025</span>
+                            <span class="venue-pill">Conference</span>
+                        </div>
+                        <h3>
+                            <a href="https://sabato-nocera.github.io/files/ease2025.pdf" target="_blank" rel="noopener noreferrer">
+                                ALOHA: A (IBoM) tooL generatOr for Hugging fAce
+                            </a>
+                        </h3>
+                        <p class="publication-authors">R. D'Avino, S. Nocera, <strong>D. Bifolco</strong>, F. Pepe, M. Di Penta, G. Scanniello</p>
+                        <p class="publication-venue">Proceedings of the 29th International Conference on Evaluation and Assessment in Software Engineering (EASE)</p>
+                    </article>
+
+                    <article class="surface-card publication-card" data-year="2024" data-search="accuracy github dependency graph ease software repositories">
+                        <div class="publication-meta">
+                            <span class="year-pill">2024</span>
+                            <span class="venue-pill">Conference</span>
+                        </div>
+                        <h3>
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3661167.3661175" target="_blank" rel="noopener noreferrer">
+                                On the Accuracy of GitHub's Dependency Graph
+                            </a>
+                        </h3>
+                        <p class="publication-authors"><strong>D. Bifolco</strong>, S. Nocera, S. Romano, M. Di Penta, R. Francese, G. Scanniello</p>
+                        <p class="publication-venue">Proceedings of the 28th International Conference on Evaluation and Assessment in Software Engineering (EASE)</p>
+                    </article>
+
+                    <article class="surface-card publication-card" data-year="2024" data-search="msr4sbom mining software repositories software bills of materials esem">
+                        <div class="publication-meta">
+                            <span class="year-pill">2024</span>
+                            <span class="venue-pill">Conference</span>
+                        </div>
+                        <h3>
+                            <a href="https://dl.acm.org/doi/pdf/10.1145/3674805.3695390" target="_blank" rel="noopener noreferrer">
+                                MSR4SBOM: Mining Software Repositories for Enhanced Software Bills of Materials
+                            </a>
+                        </h3>
+                        <p class="publication-authors">G. Scanniello, M. Di Penta, S. Romano, R. Francese, S. Nocera, P. Cassieri, <strong>D. Bifolco</strong>, F. Zampetti</p>
+                        <p class="publication-venue">18th ACM/IEEE International Symposium on Empirical Software Engineering and Measurement (ESEM)</p>
+                    </article>
+                </div>
+
+                <div class="empty-state surface-card" id="publications-empty" hidden>
+                    <h3>No publications match the current filters.</h3>
+                    <p>Try clearing the search field or switching the year filter.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="content-section section-muted">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-kicker">Service</span>
+                    <h2>Academic service and committee work.</h2>
+                </div>
+                <div class="service-grid">
+                    <article class="surface-card service-card" data-aos="fade-up">
+                        <span class="service-year">2026</span>
+                        <h3>ICSME 2026</h3>
+                        <p>Program Committee member for the Tool Demo and Data Showcase Track, and Web Chair in the Organizing Committee.</p>
+                    </article>
+                    <article class="surface-card service-card" data-aos="fade-up" data-aos-delay="100">
+                        <span class="service-year">2026</span>
+                        <h3>ACQUIRE 2026</h3>
+                        <p>Program Committee member for the 1st International Workshop on AI Code Quality, Integrity &amp; Reliability.</p>
+                    </article>
+                    <article class="surface-card service-card" data-aos="fade-up" data-aos-delay="200">
+                        <span class="service-year">2025</span>
+                        <h3>TOSEM &amp; A-SPPI 2025</h3>
+                        <p>Reviewer for ACM Transactions on Software Engineering and Methodology and Program Committee member for A-SPPI 2025.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <span class="section-kicker">Contact</span>
+                    <h2>Contact</h2>
+                </div>
+
+                <div class="contact-grid">
+                    <a class="surface-card contact-card" href="mailto:d.bifolo97@gmail.com" data-aos="fade-up">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <span class="contact-label">Email</span>
+                            <strong>d.bifolo97@gmail.com</strong>
+                        </div>
                     </a>
-                    <a href="https://www.youtube.com/watch?v=M6nqjBf9_pw" class="icon-link youtube-icon" target="_blank" aria-label="YouTube video">
-                    <i class="fab fa-youtube"></i>
+                    <a class="surface-card contact-card" href="https://linkedin.com/in/daniele-bifolco" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="60">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <span class="contact-label">LinkedIn</span>
+                            <strong>Professional profile</strong>
+                        </div>
+                    </a>
+                    <a class="surface-card contact-card" href="https://github.com/danielebifolco" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="120">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <span class="contact-label">GitHub</span>
+                            <strong>Code and repositories</strong>
+                        </div>
+                    </a>
+                    <a class="surface-card contact-card" href="https://scholar.google.com/citations?user=DyBfcIEAAAAJ&amp;hl" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="180">
+                        <img src="assets/images/Google_Scholar_logo.svg" alt="Google Scholar logo">
+                        <div>
+                            <span class="contact-label">Google Scholar</span>
+                            <strong>Academic citations</strong>
+                        </div>
+                    </a>
+                    <a class="surface-card contact-card" href="https://www.researchgate.net/profile/Daniele-Bifolco" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="240">
+                        <img src="assets/images/researchgate-brands-solid.svg" alt="ResearchGate logo">
+                        <div>
+                            <span class="contact-label">ResearchGate</span>
+                            <strong>Research profile</strong>
+                        </div>
+                    </a>
+                    <a class="surface-card contact-card" href="https://dblp.org/pid/378/0221.html" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="300">
+                        <img src="assets/images/dblp.svg" alt="DBLP logo">
+                        <div>
+                            <span class="contact-label">DBLP</span>
+                            <strong>Bibliographic record</strong>
+                        </div>
                     </a>
                 </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-<script>
-  // Sorting logic
-  document.getElementById('sort-publications').addEventListener('change', function() {
-    const order = this.value;
-    const list = document.getElementById('publications-list');
-    const items = Array.from(list.querySelectorAll('li'));
-
-    items.sort((a, b) => {
-      const yearA = parseInt(a.getAttribute('data-year'));
-      const yearB = parseInt(b.getAttribute('data-year'));
-      return order === 'asc' ? yearA - yearB : yearB - yearA;
-    });
-
-    items.forEach(item => list.appendChild(item));
-  });
-</script>
-        <section id="services" class="py-5">
-      <div class="container" data-aos="fade-up">
-        <h2>Committee Memberships</h2>
-        <ul>
-            <li><strong>42nd International Conference on Software Maintenance and Evolution (ICSME26) - Tool Demo and Data Showcase Track</strong><br>
-            Committee Member in Program Committee</li>
-            <li><strong>42nd International Conference on Software Maintenance and Evolution (ICSME26)</strong><br>
-            Web Chair in Organizing Committee</li>
-            <li><strong>ACM Transactions on Software Engineering and Methodology (TOSEM)</strong> <br>
-             Involved as Reviewer</li>
-            <li><strong>International Workshop on Analytics for Software Product and Process Improvement (A-SPPI25)</strong> <br>
-             Committee Member in Program Committee</li>
-            <li><strong>1st International Workshop on AI Code QUality, Integrity & REliability (ACQUIRE 2026)</strong> <br>
-             Committee Member in Program Committee</li>
-        </ul>
-      </div>
-    </section>
-        </div>
-    </section>
-
-    <section id="contact" class="py-5 bg-light">
-        <div class="container" data-aos="fade-up">
-            <h2>Contacts</h2>
-
-            <div class="d-flex justify-content-center mb-4">
-                <a href="mailto:d.bifolo97@gmail.com" class="me-3">
-                    <img src="assets/images/email.png" alt="Email" style="height: 40px; width: 40px;">
-                </a>
-                <a href="https://x.com/BifolcoDaniele" target="_blank" class="me-3">
-                    <img src="assets/images/square-x-twitter-brands-solid.svg" alt="Scoups" style="height: 40px; width: 40px;">
-                </a>
-                <a href="https://linkedin.com/in/daniele-bifolco" target="_blank" class="me-3">
-                    <i class="fab fa-linkedin" style="font-size: 40px; color: #0077b5;" alt="LinkedIn"></i>
-                </a>
-                <a href="https://www.researchgate.net/profile/Daniele-Bifolco" target="_blank" class="me-3">
-                    <img src="assets/images/researchgate-brands-solid.svg" alt="ResearchGate" style="height: 40px; width: 40px;">
-                </a>
-                <a href="https://www.scopus.com/authid/detail.uri?authorId=59202267400" target="_blank" class="me-3">
-                    <img src="assets/images/scopus.svg" alt="Scoups" style="height: 40px; width: 40px;">
-                </a>
-                <a href="https://scholar.google.com/citations?user=DyBfcIEAAAAJ&hl" target="_blank" class="me-3">
-                    <img src="assets/images/Google_Scholar_logo.svg" alt="Google Scholar" style="height: 40px; width: 40px;">
-                </a>
-                <a href="https://www.unisannio.it/it/users/daniele-bifolco" target="_blank" class="me-3">
-                    <img src="assets/images/Logo_unisannio.png" alt="Unisannio" style="height: 40px; width: 40px;">
-                </a>
-                <a href="https://dblp.org/pid/378/0221.html" target="_blank">
-                    <img src="assets/images/dblp.svg" alt="Dblp" style="height: 40px; width: 40px;">
-                </a>
-
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <footer class="text-center py-4 bg-dark text-white">
-        <p>© 2024 Daniele Bifolco. All rights reserved.</p>
+    <footer class="site-footer">
+        <div class="container footer-row">
+            <p>© 2026 Daniele Bifolco. All rights reserved.</p>
+            <a href="#hero">Back to top</a>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
+        const publicationSearch = document.getElementById('publication-search');
+        const publicationSort = document.getElementById('publication-sort');
+        const publicationFilters = document.getElementById('publication-filters');
+        const publicationsList = document.getElementById('publications-list');
+        const publicationCards = Array.from(publicationsList.querySelectorAll('.publication-card'));
+        const resultsSummary = document.getElementById('results-summary');
+        const emptyState = document.getElementById('publications-empty');
+        let selectedYear = 'all';
+
+        function renderPublications() {
+            const query = publicationSearch.value.trim().toLowerCase();
+            const sortDirection = publicationSort.value;
+
+            const visibleCards = publicationCards
+                .filter((card) => {
+                    const year = card.dataset.year;
+                    const haystack = card.dataset.search.toLowerCase() + ' ' + card.innerText.toLowerCase();
+                    const matchesYear = selectedYear === 'all' || year === selectedYear;
+                    const matchesQuery = haystack.includes(query);
+                    const shouldShow = matchesYear && matchesQuery;
+                    card.hidden = !shouldShow;
+                    return shouldShow;
+                })
+                .sort((left, right) => {
+                    const yearDelta = Number(left.dataset.year) - Number(right.dataset.year);
+                    return sortDirection === 'asc' ? yearDelta : -yearDelta;
+                });
+
+            visibleCards.forEach((card) => publicationsList.appendChild(card));
+            resultsSummary.textContent = `Showing ${visibleCards.length} publication${visibleCards.length === 1 ? '' : 's'}`;
+            emptyState.hidden = visibleCards.length !== 0;
+        }
+
+        publicationSearch.addEventListener('input', renderPublications);
+        publicationSort.addEventListener('change', renderPublications);
+        publicationFilters.addEventListener('click', (event) => {
+            const chip = event.target.closest('.filter-chip');
+            if (!chip) {
+                return;
+            }
+
+            selectedYear = chip.dataset.filter;
+            publicationFilters.querySelectorAll('.filter-chip').forEach((button) => {
+                button.classList.toggle('active', button === chip);
+            });
+            renderPublications();
+        });
+
+        const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+        const sections = navLinks
+            .map((link) => document.querySelector(link.getAttribute('href')))
+            .filter(Boolean);
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+
+                navLinks.forEach((link) => {
+                    const isActive = link.getAttribute('href') === `#${entry.target.id}`;
+                    link.classList.toggle('active', isActive);
+                });
+            });
+        }, {
+            rootMargin: '-45% 0px -45% 0px',
+            threshold: 0
+        });
+
+        sections.forEach((section) => sectionObserver.observe(section));
+
+        AOS.init({
+            duration: 700,
+            once: true,
+            easing: 'ease-out-cubic',
+            disable: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        });
+
+        renderPublications();
     </script>
 </body>
 </html>
-    
